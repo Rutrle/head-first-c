@@ -23,6 +23,14 @@ int main()
     } else {
         val = atoi(card_name);
     }
+    /* Check if the value is from 3 to 6 */
+
+    if (val >= 3 && val <=6)
+        puts("Count has gone up");
+    else if (val >= 10)
+        puts("Count has gone down");
+
     printf("The card value is: %i\n", val);
+
     return 0;
 }
